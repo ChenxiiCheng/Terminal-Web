@@ -7,7 +7,6 @@ import {
   Heading,
   Spacer,
   Button,
-  Text,
   Modal,
   ModalOverlay,
   ModalContent,
@@ -16,7 +15,6 @@ import {
   ModalBody,
   ModalCloseButton,
   useDisclosure,
-  useToast,
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import ReactJson from 'react-json-view';
@@ -173,6 +171,7 @@ function App() {
             setReplay={setReplay}
             setTryDemoLoading={setTryDemoLoading}
             jsonData={jsonData}
+            fileName={fileName}
           />
         </Box>
         <Box

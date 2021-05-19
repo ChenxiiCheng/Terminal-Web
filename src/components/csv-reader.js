@@ -11,6 +11,7 @@ export default function CSVReaderComponent({
   setReplay,
   setTryDemoLoading,
   jsonData,
+  fileName,
 }) {
   const buttonRef = React.useRef(null);
 
@@ -57,7 +58,7 @@ export default function CSVReaderComponent({
       }, 400);
       setTimeout(() => {
         setTryDemoLoading(false);
-      }, 1200);
+      }, 1000);
     }
   };
 
@@ -78,10 +79,6 @@ export default function CSVReaderComponent({
       onRemoveFile={handleOnRemoveFile}
     >
       {({ file }) => {
-        if (file) {
-          setFileName(file.name);
-        }
-
         return (
           <aside
             style={{
@@ -127,7 +124,11 @@ export default function CSVReaderComponent({
                 width: '55%',
               }}
             >
-              {file ? file.name : 'Please click upload file button...'}
+              {file
+                ? file.name
+                : fileName
+                ? fileName
+                : 'Please click upload file button...'}
             </div>
             <button
               style={{

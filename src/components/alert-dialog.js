@@ -35,7 +35,7 @@ export default function AlertDialogComp({
       }, 400);
       setTimeout(() => {
         setTryDemoLoading(false);
-      }, 1200);
+      }, 1000);
     }
   };
 
