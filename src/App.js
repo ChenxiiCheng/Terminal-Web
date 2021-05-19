@@ -124,7 +124,7 @@ function App() {
             : []
         }
       >
-        <Flex fontSize="xl" width="1100px" mx="auto" paddingTop="10">
+        <Flex fontSize="xl" width="1100px" mx="auto" paddingTop="14">
           <Spacer />
           <Heading as="h2" size="2xl">
             Console App Web Version
@@ -196,7 +196,7 @@ function App() {
           </Box>
           <Box padding="2" flex="2">
             <Heading as="h2" size="md" color="tomato">
-              Console Output Data
+              Terminal Output Data
             </Heading>
             <Box mt="4">
               <Terminal
