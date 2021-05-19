@@ -7,6 +7,11 @@ export const ColorModeSwitcher = props => {
   const text = useColorModeValue('dark', 'light');
   const SwitchIcon = useColorModeValue(FaMoon, FaSun);
 
+  const handleOnClick = () => {
+    toggleColorMode();
+    props.setColorMode(window.localStorage.getItem('chakra-ui-color-mode'));
+  };
+
   return (
     <IconButton
       size="md"
@@ -15,7 +20,7 @@ export const ColorModeSwitcher = props => {
       variant="ghost"
       color="current"
       marginLeft="2"
-      onClick={toggleColorMode}
+      onClick={handleOnClick}
       icon={<SwitchIcon />}
       {...props}
     />
