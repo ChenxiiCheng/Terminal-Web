@@ -127,7 +127,7 @@ function App() {
         <Flex fontSize="xl" width="1100px" mx="auto" paddingTop="14">
           <Spacer />
           <Heading as="h2" size="2xl">
-            Console App Web Version
+            Terminal App Web Version
           </Heading>
           <Spacer />
           <ColorModeSwitcher

@@ -1,8 +1,8 @@
-## Console App Web Version
+## Terminal App Web Version
 
-> This is the console application website version, if you are interested in running on your own machine, please visit Terminal-App GitHub repo 👉 [Terminal App](https://github.com/ChenxiiCheng/Terminal-App)
+> This is the terminal application website version, if you are interested in running on your own machine, please visit Terminal-App GitHub repo 👉 [Terminal App](https://github.com/ChenxiiCheng/Terminal-App)
 
-[**Web Online Demo**](https://terminal-web.vercel.app/)
+🔥 [**Web Online Demo**](https://terminal-web.vercel.app/)
 
 ### 1. How to run
 
